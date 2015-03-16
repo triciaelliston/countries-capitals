@@ -1,0 +1,35 @@
+<h1>{{ countryDetails.countryName }}</h1>
+<table>
+	<tr>
+		<td>Population of Country:</td>
+		<td>{{ countryDetails.population }}</td>
+	</tr>
+	<tr>
+		<td>Area:</td>
+		<td>{{ countryDetails.area }}</td>
+	</tr>
+	<tr>
+		<td>Capital:</td>
+		<td>{{ countryDetails.Capital }}</td>
+	</tr>
+	<tr>
+		<td>Population of Capital:</td>
+		<td>{{ countryDetails.capitalPopulation }}</td>
+	</tr>
+	<tr>
+		<td>Neighbors:</td>
+		<td>
+			<span ng-repeat="neighbor in neighbors">
+				<a ng-href="#/countries/{{ neighbor.countryCode }}/capital">{{ neighbor.name }}"</a>			
+			</span>
+		</td>
+	</tr>
+</table>
+<div>
+	<img src="http://www.geonames.org/img/country/250/{{ countryCode }}.png" />
+	<img src="http://www.geonames.org/flags/x/{{ countryCode}}.gif" />
+</div>
+<div>
+	<button class="btn" href="#!/Home">Home</button>
+	<button class="btn" href="#!/countries">Browse Countries</button>
+</div>

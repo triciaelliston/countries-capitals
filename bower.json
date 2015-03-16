@@ -1,0 +1,24 @@
+{
+  "name": "countries-capitals",
+  "version": "0.0.0",
+  "homepage": "https://github.com/triciaelliston/countries-capitals",
+  "authors": [
+    "Tricia Elliston <triciaelliston@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "angular-route": "~1.3.14",
+    "angular-animate": "~1.3.14"
+  }
+}

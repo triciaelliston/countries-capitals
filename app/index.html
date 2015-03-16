@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CountriesCapitals">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Countries & Capitals App</title>
+
+	<!-- build:css ./_assets/combined.css -->
+	<!--<link rel="stylesheet" href="./countries-capitals.css" />-->
+	<!-- endbuild -->
+
+</head>
+<body>
+	<h1>Countries & Capitals</h1>
+  	<div ng-class="{ loading: isLoading }">
+    	<div ng-view></div>
+  	</div>
+
+	<!-- build:js ./_assets/combined.js -->
+	<script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-animate/angular-animate.js"></script>
+	<script src="./countries-capitals.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
