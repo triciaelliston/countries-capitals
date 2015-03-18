@@ -6,15 +6,15 @@
 	</tr>
 	<tr>
 		<td>Area:</td>
-		<td>{{ countryDetails.area }}</td>
+		<td>{{ countryDetails.areaInSqKm }}</td>
 	</tr>
 	<tr>
 		<td>Capital:</td>
-		<td>{{ countryDetails.Capital }}</td>
+		<td>{{ countryDetails.capital }}</td>
 	</tr>
 	<tr>
 		<td>Population of Capital:</td>
-		<td>{{ countryDetails.capitalPopulation }}</td>
+		<td>{{ capitalDetails.population }}</td>
 	</tr>
 	<tr>
 		<td>Neighbors:</td>
@@ -27,9 +27,9 @@
 </table>
 <div>
 	<img src="http://www.geonames.org/img/country/250/{{ countryCode }}.png" />
-	<img src="http://www.geonames.org/flags/x/{{ countryCode}}.gif" />
+	<img src="http://www.geonames.org/flags/x/{{ countryCode.toLowerCase() }}.gif" />
 </div>
 <div>
-	<button class="btn" href="#!/Home">Home</button>
-	<button class="btn" href="#!/countries">Browse Countries</button>
+	<a class="btn" href="#">Home</a>
+	<a class="btn" href="#countries">Browse Countries</a>
 </div>
