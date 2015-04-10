@@ -29,7 +29,7 @@ angular.module('CountriesCapitals', ['ngRoute', 'ngAnimate'])
 				country: countryCode 
 			};
 			return servGetGeoCountries(API_CONFIG.COUNTRY_ENDPOINT, qryParams).then(function(countryDetails) {
-				console.log(countryCode);
+				//console.log(countryCode);
 				console.log("display countryDetails");
 				if (countryCode) {
 					console.log(countryDetails.data.geonames[0]);
